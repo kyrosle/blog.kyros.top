@@ -17,7 +17,7 @@ asset_dir = "public"
 [web.app]
 
 # HTML title tag content
-title = "YuKun Liu | mrxzx.info"
+title = "Kyros | kyros.info"
 
 [web.watcher]
 

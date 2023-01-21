@@ -9,7 +9,7 @@ use crate::{
 };
 
 #[allow(dead_code)]
-const BLOG_REPO: &'static str = "mrxiaozhuox/blog.mrxzx.info";
+const BLOG_REPO: &'static str = "kyrosle/blog-content";
 
 pub fn BlogList(cx: Scope) -> Element {
     let list = use_future(&cx, (), |_| async move {
@@ -62,7 +62,7 @@ pub fn BlogList(cx: Scope) -> Element {
                             class: "max-w-5xl text-center",
                             h1 {
                                 class: "text-xl font-bold",
-                                "\"YuKun's Blog\""
+                                "\"Kyros Blog\""
                             }
                             div {
                                 class: "mt-6",

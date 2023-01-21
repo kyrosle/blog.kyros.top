@@ -16,40 +16,15 @@ pub fn Home(cx: Scope) -> Element {
                     class: "max-w-2xl text-center",
                     img {
                         class: "rounded-lg w-32 mb-4 mx-auto",
-                        src: "https://avatars.githubusercontent.com/u/41265098?v=4"
+                        src: "https://avatars.githubusercontent.com/u/74538854?v=4"
                     }
                     h5 {
                         class: "text-2xl dark:text-white font-medium leading-tight mb-2",
-                        "YuKun Liu"
+                        "Kyros"
                     }
                     p {
                         class: "text-gray-500 dark:text-gray-300",
-                        "Computer Engineering | Keen on new technologies."
-                    }
-                    ul {
-                        class: "mt-3 dark:text-gray-100",
-                        li {
-                            "Studying in "
-                            a {
-                                class: "underline",
-                                href: "https://sjsu.edu",
-                                "San Jose State Unversity"
-                            }
-                        }
-                        li {
-                            "Working at "
-                            a {
-                                class: "underline",
-                                href: "https://dioxuslabs.com",
-                                "Dioxus Labs"
-                            }
-                            " & "
-                            a {
-                                class: "underline",
-                                href: "https://dorea.mrxzx.info",
-                                "Dorea DB"
-                            }
-                        }
+                        "Computer Science Student | Keen on new technologies."
                     }
                     Footer {}
                 }
@@ -77,99 +52,13 @@ pub fn Projects(cx: Scope) -> Element {
             name: "Web Development",
             projects: vec![
                 Project {
-                    name: "LyApi",
-                    desc: "A PHP web development framework",
-                    url: "https://gitee.com/mrxzx/LyApi",
+                    name: "bt-rust",
+                    desc: "BitTorrent download tool in development stage", 
+                    url: "https://github.com/kyrosle/bt-rust.git",
                     job: "Author",
-                },
-                Project {
-                    name: "Denly",
-                    desc: "A deno web development framework (closed)",
-                    url: "https://github.com/mrxiaozhuox/denly",
-                    job: "Author",
-                },
-                Project {
-                    name: "Dioxus",
-                    desc: "User interfaces that run anywhere.",
-                    url: "https://dioxuslabs.com/",
-                    job: "Member",
                 },
             ],
         },
-        Category {
-            name: "Dioxus Ecosystem",
-            projects: vec![
-                Project {
-                    name: "Dioxus Cli",
-                    desc: "Tooling to supercharge dioxus projects",
-                    url: "https://github.com/DioxusLabs/cli",
-                    job: "Maintainer",
-                },
-                Project {
-                    name: "Dioxus Starter",
-                    desc: "Starter template for dioxus framework",
-                    url: "https://github.com/mrxiaozhuox/dioxus-starter",
-                    job: "Author",
-                },
-                Project {
-                    name: "Dioxus Toast",
-                    desc: "Add toast support for your dioxus project",
-                    url: "https://github.com/mrxiaozhuox/dioxus-starter",
-                    job: "Author",
-                },
-                Project {
-                    name: "Diogen",
-                    desc: "A static site generator powered by dioxus [WIP]",
-                    url: "https://github.com/mrxiaozhuox/diogen",
-                    job: "Author"
-                }
-            ],
-        },
-        Category {
-            name: "Database System",
-            projects: vec![
-                Project {
-                    name: "Dorea",
-                    desc: "A Key-Value data storage system",
-                    url: "https://github.com/mrxiaozhuox/dorea",
-                    job: "Author"
-                },
-                Project {
-                    name: "Doson",
-                    desc: "Doson structure parser - The extended format of json",
-                    url: "https://github.com/doreadb/doson",
-                    job: "Author",
-                }
-            ],
-        },
-        Category {
-            name: "Website | Online Tool",
-            projects: vec![
-                Project {
-                    name: "Teacher Pod",
-                    desc: "Podcast app for learning",
-                    url: "https://github.com/commune-org/teacher-pod",
-                    job: "Full-Stack Developer"
-                },
-                Project {
-                    name: "Dioxus Hackernews",
-                    desc: "Hackernews made with Dioxus",
-                    url: "https://github.com/mrxiaozhuox/dioxus-hackernews",
-                    job: "Author"
-                }
-            ],
-        },
-        Category {
-            name: "Rust Dev Crates",
-            projects: vec![
-                Project {
-                    name: "Metadata Parser",
-                    desc: "parse & get markdown meta-data | Rust Library |",
-                    url: "https://github.com/mrxiaozhuox/markdown-meta-parser",
-                    job: "Author"
-                }
-            ]
-        }
     ];
 
     let displayer = data.iter().map(|v| {
@@ -232,54 +121,25 @@ pub fn About(cx: Scope) -> Element {
                     class: "max-w-5xl text-center",
                     img {
                         class: "rounded-lg w-32 mb-4 mx-auto",
-                        src: "https://avatars.githubusercontent.com/u/41265098?v=4"
+                        src: "https://avatars.githubusercontent.com/u/74538854?v=4"
                     }
                     div {
                         class: "space-y-4 text-gray-900 dark:text-gray-300",
                         p {
-                            "Hi, My name is YuKun Liu, currently I'm a student in "
-                            strong {
-                                class: "underline",
-                                "San Jose State University"
-                            }
-                            "."
+                            "Hi, My name is Kyros, currently I'm a student."
                         }
                         p {
                             "My email - ",
                             a {
                                 class: "underline font-bold",
-                                href: "mailto:mrxzx.info@gmail.com",
-                                "mrxzx.info@gmail.com"
-                            }
-                        }
-                        p {
-                            "My hometown - ",
-                            strong {
-                                "ChengDu, China 🐼"
+                                "le@90e.com"
                             }
                         }
                         p {
                             "My favorite tech stack - ",
                             strong {
-                                "Rust, Typescript, Postgresql, Redis",
+                                "Rust, Go, .net core",
                             }
-                        }
-                        p {
-                            "or you can use "
-                            a {
-                                class: "font-bold",
-                                href: "javascript:;",
-                                title: "mrxiaozhuox",
-                                "Wechat"
-                            }
-                            " & "
-                            a {
-                                class: "font-bold",
-                                href: "javascript:;",
-                                title: "3507952990",
-                                "QQ"
-                            }
-                            " to contact me."
                         }
                     }
                     Footer {}

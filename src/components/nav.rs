@@ -13,7 +13,7 @@ pub fn Navbar(cx: Scope) -> Element {
                         Link {
                             class: "flex-shrink-0 flex items-center font-bold text-2xl",
                             to: "/",
-                            "mrxzx.info"
+                            "kyros.info"
                         }
                         div {
                             class: "hidden sm:block sm:ml-6 absolute right-0",

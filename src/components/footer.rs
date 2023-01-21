@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 use dioxus_free_icons::{
-    icons::{fa_brands_icons, fa_solid_icons},
+    icons::{fa_brands_icons,fa_solid_icons},
     Icon,
 };
 
@@ -56,34 +56,10 @@ pub fn Footer(cx: Scope) -> Element {
                 }
                 a {
                     class: "text-black dark:text-white hover:text-gray-800 dark:hover:text-gray-200",
-                    href: "https://github.com/mrxiaozhuox",
+                    href: "https://github.com/kyrosle",
                     Icon {
                         size: 26,
                         icon: fa_brands_icons::FaGithub
-                    }
-                }
-                a {
-                    class: "text-black dark:text-white hover:text-gray-800 dark:hover:text-gray-200",
-                    href: "https://www.zhihu.com/people/mrxiao-zhuo-x",
-                    Icon {
-                        size: 26,
-                        icon: fa_brands_icons::FaZhihu
-                    }
-                }
-                a {
-                    class: "text-black dark:text-white hover:text-gray-800 dark:hover:text-gray-200",
-                    href: "https://www.instagram.com/mrxiaozhuox/",
-                    Icon {
-                        size: 26,
-                        icon: fa_brands_icons::FaInstagram
-                    }
-                }
-                a {
-                    class: "text-black dark:text-white hover:text-gray-800 dark:hover:text-gray-200",
-                    href: "https://twitter.com/mrxiaozhuox",
-                    Icon {
-                        size: 26,
-                        icon: fa_brands_icons::FaTwitter
                     }
                 }
             }
